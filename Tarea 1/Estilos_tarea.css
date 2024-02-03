@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 header {
@@ -31,12 +32,119 @@ header {
     height: auto;
 }
 
+.producto h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.producto span {
+    font-size: 1em;
+    color: #007bff; /* Cambiar color del precio según preferencia */
+}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1em;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+}
+
+
+footer a{
+    color: red;
+}
+/* Establecer tamaño fijo para las imágenes */
+.producto img {
+    width: 180px; /* Establece el ancho deseado */
+    height: 180px; /* Establece la altura deseada */
+    object-fit: cover; /* Ajusta la imagen manteniendo la proporción y cubriendo el contenedor */
+    margin-bottom: 10px; /* Agrega espacio entre la imagen y el texto */
+  }
+  
+  /* Contenedor para cada artículo */
+  .producto {
+    display: inline-block; /* Hace que los elementos .producto se alineen en línea */
+    text-align: justify; /* Justifica el texto dentro de .producto */
+    vertical-align: top; /* Alinea los elementos en la parte superior */
+    margin-right: 20px; /* Espacio entre los elementos .producto */
+    width: 250px; /* Ajusta el ancho del contenedor */
+  }
+  
+  /* Párrafos dentro de .producto */
+  .producto p {
+    margin: 0; /* Elimina márgenes predeterminados que pueden afectar la justificación */
+  }
+  
+  /* Precios dentro de .producto */
+  .producto span {
+    display: block; /* Hace que el precio esté en una línea diferente para evitar problemas de alineación */
+  }
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.formulario {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
